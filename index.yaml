@@ -1,0 +1,136 @@
+apiVersion: v1
+entries:
+  jenkins:
+  - annotations:
+      category: Infrastructure
+    apiVersion: v2
+    appVersion: 2.319.1
+    created: "2021-12-19T13:38:14.754649389Z"
+    dependencies:
+    - name: common
+      repository: https://charts.bitnami.com/bitnami
+      tags:
+      - bitnami-common
+      version: 1.x.x
+    description: The leading open source automation server
+    digest: a76fb27d0df5de6dabd15eff8d8cbf99f140108b527714b7ce53e0b1f8f891f7
+    home: https://github.com/bitnami/charts/tree/master/bitnami/jenkins
+    icon: https://bitnami.com/assets/stacks/jenkins/img/jenkins-stack-220x234.png
+    keywords:
+    - jenkins
+    - ci
+    - cd
+    - http
+    - web
+    - application
+    maintainers:
+    - email: containers@bitnami.com
+      name: Bitnami
+    name: jenkins
+    sources:
+    - https://github.com/bitnami/bitnami-docker-jenkins
+    - https://jenkins.io/
+    urls:
+    - https://sreeveerdevops.github.io/k8sb08-helm-charts/k8sb08-helm-charts/jenkins-8.0.22.tgz
+    version: 8.0.22
+  mynginx:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2021-12-19T13:38:14.755006123Z"
+    description: A Helm chart for Kubernetes
+    digest: b8a155293e237a6b0f8eb2e5652ce7b7dc83b3fe4bc41f55b242418a596be652
+    name: mynginx
+    type: application
+    urls:
+    - https://sreeveerdevops.github.io/k8sb08-helm-charts/k8sb08-helm-charts/mynginx-0.1.0.tgz
+    version: 0.1.0
+  rancher:
+  - apiVersion: v1
+    appVersion: v2.6.2
+    created: "2021-12-19T13:38:14.756185768Z"
+    description: Install Rancher Server to manage Kubernetes clusters across providers.
+    digest: c7d6c64e15c2b9101d341726fb87f342b28cc946084aeb1773e4803f0c2f6410
+    home: https://rancher.com
+    icon: https://github.com/rancher/ui/blob/master/public/assets/images/logos/welcome-cow.svg
+    keywords:
+    - rancher
+    kubeVersion: < 1.22.0-0
+    maintainers:
+    - email: charts@rancher.com
+      name: Rancher Labs
+    name: rancher
+    sources:
+    - https://github.com/rancher/rancher
+    - https://github.com/rancher/server-chart
+    urls:
+    - https://sreeveerdevops.github.io/k8sb08-helm-charts/k8sb08-helm-charts/rancher-2.6.2.tgz
+    version: 2.6.2
+  redis:
+  - annotations:
+      category: Database
+    apiVersion: v2
+    appVersion: 6.2.6
+    created: "2021-12-19T13:38:14.766793666Z"
+    dependencies:
+    - name: common
+      repository: https://charts.bitnami.com/bitnami
+      tags:
+      - bitnami-common
+      version: 1.x.x
+    description: Open source, advanced key-value store. It is often referred to as
+      a data structure server since keys can contain strings, hashes, lists, sets
+      and sorted sets.
+    digest: 84a28302fd45ca3cbf3d596466ace387eca1d21dcb3cbb411bedb6377d31d6e7
+    home: https://github.com/bitnami/charts/tree/master/bitnami/redis
+    icon: https://bitnami.com/assets/stacks/redis/img/redis-stack-220x234.png
+    keywords:
+    - redis
+    - keyvalue
+    - database
+    maintainers:
+    - email: containers@bitnami.com
+      name: Bitnami
+    - email: cedric@desaintmartin.fr
+      name: desaintmartin
+    name: redis
+    sources:
+    - https://github.com/bitnami/bitnami-docker-redis
+    - http://redis.io/
+    urls:
+    - https://sreeveerdevops.github.io/k8sb08-helm-charts/k8sb08-helm-charts/redis-15.6.7.tgz
+    version: 15.6.7
+  solr:
+  - annotations:
+      category: Infrastructure
+    apiVersion: v2
+    appVersion: 8.11.1
+    created: "2021-12-19T13:38:14.775353682Z"
+    dependencies:
+    - condition: zookeeper.enabled
+      name: zookeeper
+      repository: https://charts.bitnami.com/bitnami
+      version: 7.x.x
+    - name: common
+      repository: https://charts.bitnami.com/bitnami
+      tags:
+      - bitnami-common
+      version: 1.x.x
+    description: Apache Solr is an open source enterprise search platform
+    digest: e8ab7d6c1f7d13a8300b0059cac900ef9edfe681f982423790d16650a30b70ae
+    home: https://github.com/bitnami/charts/tree/master/bitnami/solr
+    icon: https://bitnami.com/assets/stacks/solr/img/solr-stack-110x117.png
+    keywords:
+    - solr
+    - zookeeper
+    - apache
+    maintainers:
+    - email: containers@bitnami.com
+      name: Bitnami
+    name: solr
+    sources:
+    - https://github.com/bitnami/bitnami-docker-solr
+    - https://lucene.apache.org/solr/
+    urls:
+    - https://sreeveerdevops.github.io/k8sb08-helm-charts/k8sb08-helm-charts/solr-2.1.8.tgz
+    version: 2.1.8
+generated: "2021-12-19T13:38:14.750834334Z"
